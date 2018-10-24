@@ -2,7 +2,7 @@
 
 ### Now progression...
 - [ ] Didn't do anything.
-- [ ] UX/UI Designing
+- [X] **UX/UI Designing**
 - [x] **Doing a little parts.**
 - [ ] Almost get one app!
 - [ ] Debugging.
@@ -21,8 +21,8 @@ Please **don't use**!!! We're still developing.
 Students of Information Engineering in **King Mongkut's Intitute of Technology Ladkrabang** 
 - @kirikiri0096
 - @limitbrk
-- Dream `not join github now!`
-- CGame `not join github now!`
+- @Dthnw
+- @zeegame
 - Ball `not join github now!`
 - Pack `not join github now!`
 
