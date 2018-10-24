@@ -11,8 +11,8 @@
 ### Main Idea
 > Some message are in SECRET! Sorry for inconvenient.
 
-Android application for Thai `Disable person and Factory`.
-Now still support Thai only
+Android application for `Disable person and Factory`.
+support Thai only for this moment.
 
 ### How to use?
 Please **don't use**!!! We still developing.
