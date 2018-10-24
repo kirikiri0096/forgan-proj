@@ -2,7 +2,7 @@
 
 ### Now progression...
 - [ ] Didn't do anything.
-- [X] **UX/UI Designing**
+- [x] **UX/UI Designing**
 - [x] **Doing a little parts.**
 - [ ] Almost get one app!
 - [ ] Debugging.
