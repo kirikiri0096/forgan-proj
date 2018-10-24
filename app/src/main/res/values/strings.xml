@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FOrgan</string>
+    <string name="Orderlist_supplier">รายการสั่งทั้งหมด</string>
+    <string name="find">ค้นหา...</string>
+    <string name="orderid">หมายเลขการสั่ง</string>
+    <string name="ordername">ชื่อสินค้า</string>
 </resources>
