@@ -4,4 +4,14 @@
     <string name="find">ค้นหา...</string>
     <string name="orderid">หมายเลขการสั่ง</string>
     <string name="ordername">ชื่อสินค้า</string>
+    <string name="require_organ">อวัยวะที่ต้องการ</string>
+    <string name="continued">ดำเนินการต่อ</string>
+    <string name="No_select_organ">โปรดเลือกอวัยวะที่ต้องการ</string>
+
+    <string-array name="organlist">
+        <item>โปรดระบุ...</item>
+        <item>หัวเทียม</item>
+        <item>ขาเทียม</item>
+        <item>กระเทียม</item>
+    </string-array>
 </resources>

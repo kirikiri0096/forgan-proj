@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_bg"
     tools:context=".Orderlist_supplier">
-
-    <include
-        android:id="@id/my_toolbar"
-        layout="@layout/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="52dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Orderlist_supplier"
@@ -26,7 +17,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:text="@string/Orderlist_supplier"
-        android:textColor="#6A98FF"
+        android:textColor="@color/TextColor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +25,7 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="319dp"
+        android:layout_width="0dp"
         android:layout_height="37dp"
         android:layout_below="@+id/Orderlist_supplier"
         android:layout_centerHorizontal="true"
@@ -104,4 +95,4 @@
         </TableRow>
 
     </TableLayout>
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

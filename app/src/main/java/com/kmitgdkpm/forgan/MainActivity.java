@@ -1,7 +1,7 @@
 package com.kmitgdkpm.forgan;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void debugger (View view){
-        Intent intent = new Intent(this, Orderlist_supplier.class);
+        Intent intent = new Intent(this, Usermain.class);
         startActivity(intent);
     }
 }
