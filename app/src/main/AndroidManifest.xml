@@ -48,7 +48,8 @@
         <activity android:name=".Login" />
         <activity android:name=".Reg_Start" />
         <activity android:name=".Reg_Select" />
-        <activity android:name=".Reg_sup_name"></activity>
+        <activity android:name=".Reg_sup_name" />
+        <activity android:name=".Reg_sup_email"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 

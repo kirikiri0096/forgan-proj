@@ -16,7 +16,7 @@ public class Reg_Select extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.LoginTheme);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reg__select);
+        setContentView(R.layout.activity_reg_select);
         hasSelect = (TextView) findViewById(R.id.hasSelect);
         selectSup = (Button) findViewById(R.id.selectSup);
 
