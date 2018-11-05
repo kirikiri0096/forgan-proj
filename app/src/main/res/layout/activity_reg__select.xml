@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reg_Select">
+
+    <TextView
+        android:layout_above="@+id/whoru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:text="คุณคือใคร?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19dp" />
+
+    <RelativeLayout
+        android:id="@+id/whoru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/selectUser"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_bt"
+            android:text="ผู้ใช้งานทั่วไป"
+            android:textColor="#FFFFFF"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/selectSup"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/selectUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_bt"
+            android:text="ผู้ให้บริการ"
+            android:textColor="#FFFFFF"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hasSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="คุณมีบัญชีอยู่แล้วใช่ไหม"
+        android:textColor="@color/colorPrimary"
+        android:textSize="11dp"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

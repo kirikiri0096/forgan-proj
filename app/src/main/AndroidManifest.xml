@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-                  android:screenOrientation="portrait">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -44,6 +45,16 @@
                 <!--<data android:scheme="@string/fb_login_protocol_scheme" />-->
             <!--</intent-filter>-->
         <!--</activity>-->
+        <activity
+            android:name=".Orderlist_supplier"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Usermain"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Login" />
+        <activity android:name=".Reg_Start" />
+        <activity android:name=".Reg_Select" />
+        <activity android:name=".Reg_sup_name"></activity>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 

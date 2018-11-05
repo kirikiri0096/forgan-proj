@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="FOrgan"
+        android:textSize="43dp" />
+
+    <EditText
+        android:id="@+id/editUser"
+        android:inputType="textEmailAddress"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_edittext"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="อีเมล"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textSize="15dp"/>
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_edittext"
+        android:hint="รหัสผ่าน"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/round_bt"
+        android:text="ลงชื่อเข้าใช้"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/orText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btRegis"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="หรือ"
+        tools:ignore="RtlCompat"
+        android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/btRegis"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/round_btregis"
+        android:text="ลงทะเบียน"
+        android:textColor="#6A98FF"
+        android:textSize="19dp"
+        android:textStyle="bold"/>
+
+    <TextView
+
+        android:id="@+id/btForget"
+        android:onClick="onClick"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/editPass"
+        android:layout_marginTop="7dp"
+        android:layout_alignRight="@id/editPass"
+        android:text="ลืมรหัสผ่าน?"
+        android:textColor="#707070"
+        tools:ignore="OnClick" />
+</RelativeLayout>
