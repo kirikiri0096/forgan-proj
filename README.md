@@ -23,8 +23,8 @@ Students of Information Engineering in **King Mongkut's Intitute of Technology L
 - @limitbrk
 - @Dthnw
 - @zeegame
-- Ball `not join github now!`
-- Pack `not join github now!`
+- @Chontstnohc
+- @pack38201
 
 ### For visitor
 You can `leave some comments or contact us` for any ideas. We'll bring some ideas to our app! Thank you.
