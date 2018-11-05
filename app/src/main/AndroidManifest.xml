@@ -24,7 +24,10 @@
         <activity
             android:name=".Usermain"
             android:screenOrientation="portrait" />
-        <activity android:name=".Login"></activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Reg_Start" />
+        <activity android:name=".Reg_Select" />
+        <activity android:name=".Reg_sup_name"></activity>
     </application>
 
 </manifest>

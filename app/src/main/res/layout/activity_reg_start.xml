@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reg_Start">
+    <TextView
+        android:id="@+id/tvStart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="เข้าร่วม FOrgan"
+        android:textColor="#6A98FF"
+        android:textSize="19dp" />
+
+
+    <TextView
+        android:id="@+id/textStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="เพียงไม่กี่ขั้นตอน"
+        android:textColor="#707070"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textStart"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="เราจะช่วยสร้างบัญชีผู้ใช้ด้วยขั้นตอนง่ายๆ"
+        android:textColor="#707070"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_bt"
+        android:text="เริ่มต้นใช้งาน"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hasStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="คุณมีบัญชีอยู่แล้วใช่ไหม"
+        android:textColor="@color/colorPrimary"
+        android:textSize="11dp"
+        tools:ignore="OnClick" />
+
+</RelativeLayout>

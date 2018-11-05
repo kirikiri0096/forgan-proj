@@ -8,35 +8,23 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
-public class Login extends AppCompatActivity {
-    Button btRegis;
-    TextView btForget;
-    EditText editUser,editPass;
+public class Reg_sup_name extends AppCompatActivity {
+    TextView hasRegSupName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(R.style.LoginTheme);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        btRegis = (Button) findViewById(R.id.btRegis);
-        btForget = (TextView) findViewById(R.id.btForget);
+        setContentView(R.layout.activity_reg_sup_name);
+        hasRegSupName = (TextView) findViewById(R.id.hasRegSupName);
 
-        btRegis.setOnClickListener(new View.OnClickListener() {
+        hasRegSupName.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent toLogin = new Intent(Login.this, Reg_Start.class);
+            public void onClick(View view) {
+                Intent toLogin = new Intent(Reg_sup_name.this,Login.class);
                 startActivity(toLogin);
-            }
-        });
-        btForget.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent toLogin1 = new Intent(Login.this, Reg_Start.class);
-                startActivity(toLogin1);
             }
         });
     }
@@ -46,5 +34,4 @@ public class Login extends AppCompatActivity {
         imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
         return true;
     }
-
 }

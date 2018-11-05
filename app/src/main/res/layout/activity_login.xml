@@ -16,8 +16,8 @@
         android:textSize="43dp" />
 
     <EditText
-        android:inputType="textEmailAddress"
         android:id="@+id/editUser"
+        android:inputType="textEmailAddress"
         android:layout_width="350dp"
         android:layout_height="40dp"
         android:background="@drawable/round_edittext"
