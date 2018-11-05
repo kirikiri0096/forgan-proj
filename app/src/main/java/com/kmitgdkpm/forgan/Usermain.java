@@ -1,52 +1,117 @@
 package com.kmitgdkpm.forgan;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
+
 public class Usermain extends AppCompatActivity {
+
+    //Component Variable
+    private ViewPager viewPager;
+    private BottomNavigationView bottomNavigationView;
+
+    //Fragments
+
+    Home_user homeFR;
+    Order_user orderFR;
+    History_user hisFR;
+    About_user aboutFR;
+    MenuItem prevMenuItem;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usermain);
 
+        //INITIALIZING...
+        //Toolbar
         setSupportActionBar((Toolbar) findViewById(R.id.my_toolbar));
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
+        //Middle Content
+        viewPager = (ViewPager) findViewById(R.id.user_View);
+
+        //BottomNav
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
 
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.user_fragment, new Home_user()).commit();
-    }
-    private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment sel_frag = null;
+        bottomNavigationView.setOnNavigationItemSelectedListener(
+                new BottomNavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.item_home:
+                                viewPager.setCurrentItem(0);
+                                break;
+                            case R.id.item_add:
+                                viewPager.setCurrentItem(1);
+                                break;
+                            case R.id.item_history:
+                                viewPager.setCurrentItem(2);
+                                break;
+                            case R.id.item_about:
+                                viewPager.setCurrentItem(3);
+                                break;
+                        }
+                        return false;
+                    }
+                });
 
-            switch (item.getItemId()) {
-                case R.id.item_home:
-                    sel_frag = new Home_user();
-                    break;
-                case R.id.item_add:
-                    sel_frag = new Order_user();
-                    break;
-                case R.id.item_history:
-                    sel_frag = new History_user();
-                    break;
-                case R.id.item_about:
-                    sel_frag = new About_user();
-                    break;
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
             }
-            getSupportFragmentManager().beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out)
-                    .replace(R.id.user_fragment, sel_frag).commit();
-            return true;
-        }
-    };
+
+            @Override
+            public void onPageSelected(int position) {
+                if (prevMenuItem != null) {
+                    prevMenuItem.setChecked(false);
+                }
+                else
+                {
+                    bottomNavigationView.getMenu().getItem(0).setChecked(false);
+                }
+                Log.d("page", "onPageSelected: "+position);
+                bottomNavigationView.getMenu().getItem(position).setChecked(true);
+                prevMenuItem = bottomNavigationView.getMenu().getItem(position);
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+       /*  //Disable ViewPager Swipe
+       viewPager.setOnTouchListener(new View.OnTouchListener()
+        {
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                return true;
+            }
+        });
+        */
+
+        setupViewPager(viewPager);
+    }
+    private void setupViewPager(ViewPager viewPager) {
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        homeFR = new Home_user();
+        orderFR = new Order_user();
+        hisFR = new History_user();
+        aboutFR = new About_user();
+        adapter.addFragment(homeFR);
+        adapter.addFragment(orderFR);
+        adapter.addFragment(hisFR);
+        adapter.addFragment(aboutFR);
+        viewPager.setAdapter(adapter);
+    }
 }
