@@ -45,12 +45,6 @@
                 <!--<data android:scheme="@string/fb_login_protocol_scheme" />-->
             <!--</intent-filter>-->
         <!--</activity>-->
-        <activity
-            android:name=".Orderlist_supplier"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Usermain"
-            android:screenOrientation="portrait" />
         <activity android:name=".Login" />
         <activity android:name=".Reg_Start" />
         <activity android:name=".Reg_Select" />
