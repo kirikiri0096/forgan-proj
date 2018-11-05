@@ -24,10 +24,17 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
     //non main libraries
-    //implementation 'de.hdodenhof:circleimageview:2.2.0'
-    //implementation 'com.github.esafirm.android-image-picker:imagepicker:x.y.z'
+//    implementation 'de.hdodenhof:circleimageview:2.2.0'
+//    implementation 'com.github.esafirm.android-image-picker:imagepicker:x.y.z'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-firestore:17.1.2'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.facebook.android:facebook-login:[4,5)'
 }
