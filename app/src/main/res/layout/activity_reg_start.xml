@@ -58,11 +58,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
-        android:clickable="true"
-        android:onClick="onClick"
         android:text="คุณมีบัญชีอยู่แล้วใช่ไหม"
         android:textColor="@color/colorPrimary"
-        android:textSize="11dp"
-        tools:ignore="OnClick" />
+        android:textSize="11dp" />
 
 </RelativeLayout>

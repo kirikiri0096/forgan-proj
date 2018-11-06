@@ -4,40 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Reg_sup_email">
+    tools:context=".Reg_sup_phone">
     <TextView
-        android:id="@+id/tvRegSupEmail"
+        android:id="@+id/tvRegSupPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/relativeRegSupEmail"
+        android:layout_above="@+id/relativeRegSupPhone"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
-        android:text="โปรดระบุขที่อยู่อีเมล"
+        android:text="โปรดระบุหมายเลขโทรศัพท์"
         android:textColor="@color/colorPrimary"
         android:textSize="19dp" />
 
     <RelativeLayout
-        android:id="@+id/relativeRegSupEmail"
+        android:id="@+id/relativeRegSupPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
 
         <EditText
-            android:id="@+id/editRegSupEmail"
+            android:id="@+id/editRegSupPhone"
             android:gravity="center"
             android:layout_width="350dp"
             android:layout_height="40dp"
             android:background="@drawable/round_edittext"
-            android:hint="ป้อนที่อยู่อีเมล"
-            android:inputType="textEmailAddress"
+            android:hint="ป้อนหมายเลขโทรศัพท์"
+            android:inputType="phone"
             android:singleLine="true"
             android:textSize="15dp" />
 
         <Button
-            android:id="@+id/btRegSupEmail"
+            android:id="@+id/btRegSupPhone"
             android:layout_width="350dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/editRegSupEmail"
+            android:layout_below="@+id/editRegSupPhone"
             android:layout_marginTop="20dp"
             android:background="@drawable/round_bt"
             android:text="ดำเนินการต่อ"
@@ -47,7 +47,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/hasRegSupEmail"
+        android:id="@+id/hasRegSupPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

@@ -4,40 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Reg_sup_email">
+    tools:context=".Reg_sup_pass">
+
     <TextView
-        android:id="@+id/tvRegSupEmail"
+        android:id="@+id/tvRegSupPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/relativeRegSupEmail"
+        android:layout_above="@+id/relativeRegSupPass"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:text="โปรดระบุขที่อยู่อีเมล"
+        android:layout_marginBottom="30dp"
+        android:text="สร้างรหัสผ่าน"
         android:textColor="@color/colorPrimary"
         android:textSize="19dp" />
 
     <RelativeLayout
-        android:id="@+id/relativeRegSupEmail"
+        android:id="@+id/relativeRegSupPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
 
         <EditText
-            android:id="@+id/editRegSupEmail"
-            android:gravity="center"
+            android:id="@+id/editRegSupPass"
             android:layout_width="350dp"
             android:layout_height="40dp"
             android:background="@drawable/round_edittext"
-            android:hint="ป้อนที่อยู่อีเมล"
-            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:hint="รหัสผ่าน"
             android:singleLine="true"
             android:textSize="15dp" />
 
+        <TextView
+            android:id="@+id/tvRegSupPass1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editRegSupPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="ป้อนอักขระอย่างน้อยหกตัวให้ผสมกันทั้งตัวเลข"
+            android:textColor="#707070" />
+
+        <TextView
+            android:id="@+id/tvRegSupPass2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvRegSupPass1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="ตัวอักษรพิมพ์เล็ก และพิมพ์ใหญ่"
+            android:textColor="#707070" />
+
         <Button
-            android:id="@+id/btRegSupEmail"
+            android:id="@+id/btRegSupPass"
             android:layout_width="350dp"
             android:layout_height="40dp"
-            android:layout_below="@+id/editRegSupEmail"
+            android:layout_below="@+id/tvRegSupPass2"
             android:layout_marginTop="20dp"
             android:background="@drawable/round_bt"
             android:text="ดำเนินการต่อ"
@@ -47,7 +68,7 @@
     </RelativeLayout>
 
     <TextView
-        android:id="@+id/hasRegSupEmail"
+        android:id="@+id/hasRegSupPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -55,6 +76,6 @@
         android:layout_marginBottom="40dp"
         android:text="คุณมีบัญชีอยู่แล้วใช่ไหม"
         android:textColor="@color/colorPrimary"
-        android:textSize="11dp"/>
-
+        android:textSize="11dp"
+        />
 </RelativeLayout>
