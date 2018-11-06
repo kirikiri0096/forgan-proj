@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reg_user_phone">
+
+    <TextView
+        android:id="@+id/tvUserPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="ระบุหมายเลขโทรศัพท์ของคุณ"
+        android:textColor="@color/TextColor"
+        android:textSize="19dp"
+        android:layout_above="@+id/relativePhone"/>
+
+    <RelativeLayout
+        android:id="@+id/relativePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:gravity="center"
+            android:id="@+id/editUserPhone"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@drawable/round_edittext"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textSize="15dp"
+            android:hint="ป้อนหมายเลขโทรศัพท์ของคุณ"/>
+
+        <Button
+            android:id="@+id/btUserPhonePhone"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/editUserPhone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_bt"
+            android:text="ดำเนินการต่อ"
+            android:textColor="#FFFFFF"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hasSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="คุณมีบัญชีอยู่แล้วใช่ไหม"
+        android:textColor="@color/TextColor"
+        android:textSize="11dp"
+        />
+
+
+</RelativeLayout>
