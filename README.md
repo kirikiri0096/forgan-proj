@@ -1,5 +1,9 @@
 # FOrgan project \[TH\]
 
+### THIS PROJECT HAS BEEN MOVED
+This project has been moved to zeegame's repo.
+You can acces his repo in https://github.com/zeegame/FOrgan-project
+
 ### Now progression...
 - [ ] Didn't do anything.
 - [x] **UX/UI Designing**
